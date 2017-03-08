@@ -32,7 +32,7 @@ Once inside the iex session, try out WiFi on a Pi Zero W or Pi Zero with RedBear
 ```
 
 If the setup was successful, you will see lots of stuff on the screen, ending with something like: 
-    00:00:17.444 [info]  WiFiManager(wlan0, dhcp) got event {:bound, %{domain: "local", ifname: "wlan0", ipv4_address: "...", ipv4_broadcast: "", ipv4_gateway: "...", ipv4_subnet_mask: "...", nameservers: ["...", "..."]}}
+>     00:00:17.444 [info]  WiFiManager(wlan0, dhcp) got event {:bound, %{domain: "local", ifname: "wlan0", ipv4_address: "...", ipv4_broadcast: "", ipv4_gateway: "...", ipv4_subnet_mask: "...", nameservers: ["...", "..."]}}
 
 ## Learn more about Nerves
 
