@@ -1,6 +1,6 @@
 # Nerves Zero Example
 
-This is a sample Nerves project intended to showcase the USB serial and ethernet "gadget" OTG capabilities of the Pi Zero and Wifi support for the Pi Zero W and RedBear IoT pHAT. It utilizes a slightly customized nerves_system_rpi found at https://github.com/tmecklem/nerves_system_rpi0.
+This is a sample Nerves project intended to showcase the USB serial and ethernet "gadget" OTG capabilities of the Pi Zero and WiFi support for the Pi Zero W and RedBear IoT pHAT. It utilizes a slightly customized nerves_system_rpi found at https://github.com/tmecklem/nerves_system_rpi0.
 
 ## Getting Started    
 
