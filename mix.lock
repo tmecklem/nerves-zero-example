@@ -1,0 +1,2 @@
+%{"distillery": {:hex, :distillery, "1.2.2", "d5a52920cbe2378c8a21dfc83b526b4225944b9dce7bf170fe5f5cddda81ffb3", [:mix], []},
+  "nerves": {:hex, :nerves, "0.5.0", "f0a486a187b9172c0ddc49631a57b3f107256248d258ed91ec7cc9d15b3d5ef6", [:mix], [{:distillery, "~> 1.0", [hex: :distillery, optional: false]}]}}
