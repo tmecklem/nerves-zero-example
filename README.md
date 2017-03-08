@@ -7,10 +7,10 @@ This is a sample Nerves project intended to showcase the USB serial and ethernet
 To start your Nerves app:
 
 ```
-NERVES_TARGET=rpi0 mix deps.get
-NERVES_TARGET=rpi0 mix firmware
+MIX_TARGET=rpi0 mix deps.get
+MIX_TARGET=rpi0 mix firmware
 #Burn to an SD card with 
-NERVES_TARGET=rpi0 mix firmware.burn
+MIX_TARGET=rpi0 mix firmware.burn
 ```
 
 ### Gadget mode serial iex
