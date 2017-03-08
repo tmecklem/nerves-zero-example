@@ -10,3 +10,6 @@ use Mix.Config
 # Uncomment to use target specific configurations
 
 # import_config "#{Mix.Project.config[:target]}.exs"
+
+config :nerves_interim_wifi,
+  regulatory_domain: "US"

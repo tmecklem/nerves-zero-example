@@ -35,7 +35,7 @@ defmodule Zero.Mixfile do
   end
   def application(_target) do
     [mod: {Zero.Application, []},
-     extra_applications: [:logger]]
+     extra_applications: [:logger, :nerves_interim_wifi]]
   end
 
   # Dependencies can be Hex packages:
@@ -54,9 +54,10 @@ defmodule Zero.Mixfile do
 
   # Specify target specific dependencies
   def deps("host"), do: []
-  def deps(target) do
+  def deps("rpi0") do
     [{:nerves_runtime, "~> 0.1.0"},
-     {:"nerves_system_#{target}", "~> 0.11.0", runtime: false}]
+     {:"nerves_system_rpi0", github: "tmecklem/nerves_system_rpi0", tag: "v0.11.1", runtime: false},
+     {:nerves_interim_wifi, "~> 0.1.0"}]
   end
 
   # We do not invoke the Nerves Env when running on the Host
