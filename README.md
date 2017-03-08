@@ -1,11 +1,6 @@
 # Nerves Zero Example
 
-## Targets
-Nerves applications are configured that they can produce images for target
-hardware by setting `NERVES_TARGET`. By default, if MIX_TARGET is not set, Nerves
-defaults to building a host target. This is useful for executing logic tests,
-running utilities, and debugging. For more information about targets:
-https://hexdocs.pm/nerves/targets.html#content
+This is a sample Nerves project intended to showcase the USB serial and ethernet "gadget" OTG capabilities of the Pi Zero and Wifi support for the Pi Zero W and RedBear IoT pHAT. It utilizes a slightly customized nerves_system_rpi found at https://github.com/tmecklem/nerves_system_rpi0.
 
 ## Getting Started    
 
