@@ -56,8 +56,8 @@ defmodule Zero.Mixfile do
   def deps("host"), do: []
   def deps("rpi0") do
     [{:nerves_runtime, "~> 0.1.0"},
-     {:"nerves_system_rpi0", github: "tmecklem/nerves_system_rpi0", tag: "v0.11.1", runtime: false},
-     {:nerves_interim_wifi, "~> 0.1.0"}]
+     {:nerves_system_rpi0, "~> 0.12.0", runtime: false},
+     {:nerves_interim_wifi, "~> 0.2.0"}]
   end
 
   # We do not invoke the Nerves Env when running on the Host
