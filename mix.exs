@@ -13,6 +13,7 @@ defmodule Zero.Mixfile do
      elixir: "~> 1.4.0",
      target: @target,
      archives: [nerves_bootstrap: "~> 0.3.0"],
+     kernel_modules: kernel_modules(@target),
      deps_path: "deps/#{@target}",
      build_path: "_build/#{@target}",
      build_embedded: Mix.env == :prod,
@@ -56,9 +57,11 @@ defmodule Zero.Mixfile do
   def deps("host"), do: []
   def deps("rpi0") do
     [{:nerves_runtime, "~> 0.1.0"},
-     {:nerves_system_rpi0, "~> 0.12.0", runtime: false},
+     {:nerves_system_rpi0, "~> 0.13.0", runtime: false},
      {:nerves_interim_wifi, "~> 0.2.0"}]
   end
+
+  def kernel_modules("rpi0"), do: ["brcmfmac"]
 
   # We do not invoke the Nerves Env when running on the Host
   def aliases("host"), do: []
