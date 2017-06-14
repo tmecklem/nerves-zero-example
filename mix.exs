@@ -57,7 +57,7 @@ defmodule Zero.Mixfile do
   def deps("host"), do: []
   def deps("rpi0") do
     [{:nerves_runtime, "~> 0.1.0"},
-     {:nerves_system_rpi0, "~> 0.13.0", runtime: false},
+     {:nerves_system_rpi0, "~> 0.14.0", runtime: false},
      {:nerves_interim_wifi, "~> 0.2.0"}]
   end
 
